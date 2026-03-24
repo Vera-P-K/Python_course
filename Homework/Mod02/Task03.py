@@ -1,10 +1,2 @@
-a = float(input())
-b = float(input())
-c = float(input())
-if (b <= a <= c) or (c <= a <= b):
-    middle = a
-elif (a <= b <= c) or (c <= b <= a):
-    middle = b
-else:
-    middle = c
-print(middle)
+a, b, c = int(input()), int(input()), int(input())
+print(a + b + c - min(a, b, c) - max(a, b, c))
