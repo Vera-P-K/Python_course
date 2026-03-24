@@ -1,7 +1,2 @@
-string = input()
-zeros = string.count('0')
-ones = string.count('1')
-if zeros == ones:
-    print("yes")
-else:
-    print("no")
+string = input("Введите число, состоящее из 0 и 1: ")
+print("yes" if string.count('0') == string.count('1') else "no")
