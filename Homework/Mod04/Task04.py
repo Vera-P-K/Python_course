@@ -1,7 +1,2 @@
-string = input()
-length = len(string)
-palindrome = string[::-1]
-if string == palindrome:
-  print(palindrome)
-else:
-  print("не палиндром")
+s = input("Введите слово: ")
+print(s if s == s[::-1] else "не палиндром")
