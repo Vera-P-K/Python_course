@@ -1,7 +1,2 @@
 number = int(input())
-if number > 0:
-  print(f"Двоичная: {bin(number)[2:]}")
-  print(f"Восьмеричная: {oct(number)[2:]}")
-  print(f"Шестнадцатеричная: {hex(number)[2:].upper()}")
-else:
-  print("Неверный ввод")
+print(f"Двоичная: {bin(number)[2:]}\nВосьмеричная: {oct(number)[2:]}\nШестнадцатеричная: {hex(number)[2:].upper()}" if number > 0 else "Неверный ввод")
